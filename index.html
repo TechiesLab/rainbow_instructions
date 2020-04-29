@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rainbow</title>
+  <link rel="shortcut icon" type="image/png" href="images/ico_full.png"/>
+  <link rel="stylesheet" href="stylesheet/prism.css">
+  <link rel="stylesheet" href="stylesheet/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+  <!-- https://images.unsplash.com/photo-1519122295308-bdb40916b529?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1568&q=80 -->
+  <div class="banner" style="background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url(images/rainbow.jpg);">
+    <div id="class-languages">
+      <i class="fab fa-html5 mr-1" style="color: #f84820"></i>
+      <i class="fab fa-css3-alt mr-1" style="color: #1970b5"></i>
+      <i class="fab fa-js-square mr-1" style="color: #FFE01B"></i>
+    </div>
+    <div class="container">
+      <div class="main">
+        <img src="images/logo.png" alt="">
+        <div class="class-title">
+          <h1>Ça va bien aller!</h1>
+          <h4>intro à P5.js</h4>
+        </div>
+      </div>
+      <p>Le but de ce mini défi est d'explorer les formes et les couleurs de la librairie p5.js pour dessiner un bel... arc-en-ciel comme <a href="projet/project_index.html" target="_blank">celui-ci</a>.</p>
+      <a class="btn btn-primary tl-button" href="#challenge" role="button">Commencer !</a>
+    </div>
+  </div>
+
+  <div class="container" id="challenge">
+
+    <div class="gamification">
+      <div class="progress">
+        <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <div class="alert alert-danger" role="alert">
+        A simple danger alert—check it out!
+      </div>
+    </div>
+
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link done task" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              Etape 1 - Nouveau projet p5.js!
+            </button>
+          </h2>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            <p>Première chose avant de commencer à travailler sur n'importe quel projet p5.js: <strong>connecte-toi <a href="https://editor.p5js.org/" target="_blank">à ton compte</a></strong> en cliquant sur "Log in".</p>
+            <img src="images/step0.png" class="img-shadow mb-3" alt="">
+
+            <p>Si tu n'as pas de compte p5.js, il faut le créer ainsi:</p>
+
+            <ol>
+              <li><p>Clique sur ce lien <a href="https://editor.p5js.org/">https://editor.p5js.org/</a></p></li>
+              <li>Clique sur le lien <strong>Sign up</strong> en haut à droite de la page. Tu auras besoin d'une adresse email.</li>
+              <li>Assure-toi de te noter quelque part ton mot de passe si tu n'utilises pas de gestionnaire de mots de passe!</li>
+            </ol>
+
+            <p>Par défaut, l'éditeur p5.js a nommé mon projet "Complete tracker". C'est marrant, mais pas très descriptif de mon projet. Je vais le renommer "Ça va bien aller!"</p>
+            <p>Toi aussi, renomme ton projet en cliquant sur le petit crayon <i class="fas fa-pencil-alt"></i>.</p>
+
+            <img class="img-shadow mb-3" src="images/step1.gif" alt="">
+
+
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed task" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Etape 2 - Premier cercle
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body">
+
+          <p>Il y a plusieurs façon de réussir ce défi! Je vais t'en montrer deux, mais tu peux en trouver d'autres! L'important, c'est de <strong>toujours commencer avec la façon la plus simple</strong> et d'y aller étape par étape.</p>
+          <p>Chaque étape doit être <strong>toute petite</strong> et tu dois t'assurer que le code fonctionne avant de passer à la prochaine étape!</p>
+
+          <img src="images/step2a.jpg" class="flexgif img-shadow mb-3" alt="">
+
+          <p>Une fois que leur code fonctionne, les programmeuses et programmeurs (je vais les appeler les "devs") essaient alors de le <strong>refactoriser</strong>, c'est-à-dire de réduire sa taille et le rendre plus élégant. Ce n'est pas facile... et honnêtement, ce n'est pas le plus important à ce stade-ci!</p>
+
+          <p>On y va! Notre première toute petite étape, c'est d'arriver à dessiner un cercle <strong><span style="color: red">rouge</span></strong> en plein millieu du canvas.</p>
+
+
+          <div class="alert alert-warning" role="alert">
+            <p><i class="fas fa-exclamation-circle"></i>  RAPPEL: la taille de ton canvas est déterminée dans la fonction <code class="language-js">setup()</code> qui ne s'exécute qu'<strong>une</strong> seule fois. La fonction <code class="language-js">draw()</code>, quant à elle, est exécutée <strong>plusieurs</strong> fois par secondes.</p>
+          </div>
+
+          <p>Pour dessiner un cercle, tu auras besoin de la fonction en p5.js <a href="https://p5js.org/reference/#/p5/circle" target="_blank"><code class="language-js">circle()</code></a>. Dans la fonction <code class="language-js">draw()</code>, essaie ceci:</p>
+
+          <pre><code class="language-js">
+            function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(220);
+  circle(200, 300, 100);
+}
+          </code></pre>
+          <p>À ton avis, que veulent dire les nombres <strong>200</strong>, <strong>300</strong> et <strong>100</strong> qui sont à l'intérieur des parenthèses de la fonction <code class="language-js">circle()</code>?</p>
+
+          <p>
+              <a class="btn btn-primary" data-toggle="collapse" href="#collapseHint1" role="button" aria-expanded="false" aria-controls="collapseHint1">Indice</a>
+            </p>
+            <div class="collapse mb-3" id="collapseHint1">
+              <div class="card card-body">
+                <p>Pour comprendre comment fonctionnent les fonctions (instructions) en p5.js, il faut lire la documentation.</p>
+                <p>😱</p>
+                <p>Eh oui... même en programmation, il faut lire... 🤓</p>
+                <p>On a de la chance car la <a href="https://p5js.org/reference/#/p5/circle">documentation</a> de p5.js est bien faite!
+
+
+                 la fonction <code class="language-js">circle()</code>. Cette fonction prend notamment 3 <strong>paramètres</strong>. Le concept de <strong>paramètre</strong> est très important en programmation! Ça nous permet de réutiliser une fonction mais en modifiant quelques éléments.</p>
+              </div>
+            </div>
+
+
+            <p>Pour la fonction <code class="language-js">circle()</code>, les trois paramètres sont <code class="language-js">x</code>, <code class="language-js">y</code> et <code class="language-js">d</code>. X et Y, ce sont les coordonnées du centre du cercle, D c'est le diamètre du cercle.</p>
+
+            <p>Si j'écris <code class="language-js">circle(200, 300, 50)</code> cela veut dire que mon cercle aura comme coordonnées d'origine (200, 300). Le diamètre sera de 50.</p>
+
+            <p>Comment fonctionnent les coordonnées dans la librairie p5.js? Pas comme dans Scratch où le point (0, 0) se trouve au beau milieu de la scène:</p>
+
+            <img class="img-shadow mb-3" src="images/step1b.png" alt="">
+
+            <p>En p5.js, l'origine se trouve plutôt en haut à gauche:</p>
+            <img class="img-shadow mb-3" src="images/step1c.png" alt="">
+            <p>Essaie de programmer deux cercles supperposés, comme ceci:</p>
+
+            <img class="img-shadow mb-3" src="images/step2.png" alt="">
+            <p>En passant, pour copier facilement une ligne, tu peux mettre ton curseur sur la ligne et appuyer les touches <strong>ctrl</strong> + <strong>shift</strong> + <strong>d</strong>:</p>
+
+            <img class="img-shadow mb-3" src="images/step2.gif" alt="">
+            <p>Si tu arrives à un résultat de ce genre, c'est que la couleur <em>intérieure</em> de ton cercle est blanche. Il te faut une couleur... <em>transparente</em>!</p>
+
+            <p>Avec le challenge <a href="https://techieslab.github.io/year-prediction_instructions/">En 2020, je serai...</a>, on a vu que les couleurs pouvaient s'exprimer grâce à un code <strong>hexadécimal</strong>. Elles peuvent aussi s'exprimer grâce à un code <strong>RGBA</strong>. Ce code a 4 valeurs. Les 3 premières sont un nombre entier entre 0 et 255. La quatrième valeur est un nombre entre 0 et 1.</p>
+
+            <p>Voici un exemple pour la couleur bleue: <code class="language-js">rgba(0,0,255,1)</code>. Pour la couleur rouge: <code class="language-js">rgba(255,0,0,1)</code>. À ton avis, quel sera le code pour la couleur verte? (<em>Green</em> en anglais... pense au code rGba)
+            </p>
+            <p>
+              <a class="btn btn-danger" data-toggle="collapse" href="#collapseHint1" role="button" aria-expanded="false" aria-controls="collapseHint1">Réponse</a>
+            </p>
+            <div class="collapse mb-3" id="collapseHint1">
+              <div class="card card-body">
+                <p><code class="language-js">rgba(0,255,0,1)</code></p>
+              </div>
+            </div>
+
+            <p>La quatrième valeur du code RGBA te donne l'opacité de la couleur. Lorsque cette valeur est 1, la couleur est opaque. À l'inverse, lorsque la valeur est à 0, la couleur est transparente.</p>
+
+            <p>Comment utiliser le code RGBA dans notre programme p5.js? Avec les fonctions <code class="language-js">color()</code> et <code class="language-js">fill()</code> (<em>remplir</em>):</p>
+
+            <pre>
+              <code class="language-js">
+                let c = color('rgba(0,0,0,0)');
+                fill(c);
+                circle(200, 200, 50);
+              </code>
+            </pre>
+
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingFour">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed task" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Etape 3 - Ligne rouge
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+            <p>Pour changer la couleur du trait de tes cercles, utilise la fonction <code class="language-js">stroke()</code></p>
+            <img class="img-shadow mb-3" src="images/step3.png" alt="">
+
+            <p>Maintenant que tu connais les fonctions de base, amuse-toi à ajouter d'autres formes (carrés, rectangles, lignes, triangles...) Tout est dans la documentation de la librairie p5.js!</p>
+          </div>
+        </div>
+      </div>
+
+  </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer-links">
+    <a href="https://techieslab.be/"><i class="fas fa-globe"></i></i></a>
+    <a href="https://www.facebook.com/TechiesLabBrussels"><i class="fab fa-facebook"></i></a>
+    <a href="https://twitter.com/TechiesLab"><i class="fab fa-twitter"></i></a>
+  </div>
+  <div class="footer-copyright">
+    <a href="https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/3298561-faites-votre-mise-en-page-avec-flexbox#/id/r-3298711" rel="noopener noreferrer" target="_blank" class="alert-link copyright">
+      <i class="far fa-copyright"></i>
+      2020 Techies Lab ASBL. All rights reserved.
+    </a>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="javascript/prism.js"></script>
+<script type="text/javascript" src="javascript/app.js"></script>
+</body>
+</html>
